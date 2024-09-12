@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taskeen Mustafa Nizamani</title>
+    <style >
+        header{
+            display: flex;
+            background-color: black;
+            padding: 4%;
+            border:2px solid red;
+            height: 20%;
+            color: aliceblue;
+        }
+        header>*{
+            padding: 16px;
+        }
+        main{
+            display: flex;
+            background-color: gray;
+            height: 50%;
+        }
+        .navbar{
+            width: 20%;
+            order: -1;
+            background-color: #444543;
+        }
+        footer{
+
+            background-color: lightgray;
+        }
+        #profile{
+            width: 60px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        iframe{
+            width: 80%;
+            border: 0px solid green;
+            order: 2;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="\myprofile.jpg" alt="Profile pic">
+        <img id="profile" src="\myprofile.jpg" alt="Profile pic">
+        <span><h1>Taskeen Mustafa Nizamani</h1>
+            <h2>The passionate Programmer</h2></span>
     </header>
-    <main></main>
+    <main>
+        
+        <nav class = "navbar">
+            <img src="home.png" alt="">
+    
+
+        </nav>
+        <iframe src="" frameborder="2"></iframe>
+        
+    </main>
     <footer></footer>
 </body>
 </html>
