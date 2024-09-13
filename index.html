@@ -10,7 +10,7 @@
             background-color: black;
             padding: 4%;
             border:2px solid red;
-            height: 20%;
+            height: 6%;
             color: aliceblue;
         }
         header>*{
@@ -21,42 +21,47 @@
             background-color: gray;
             height: 50%;
         }
-        .navbar{
-            width: 20%;
-            order: -1;
-            background-color: #444543;
-        }
+        
         footer{
 
             background-color: lightgray;
         }
+        
+        @media screen and (max-width: 650px) {
         #profile{
-            width: 60px;
-            height: 80px;
+            width: 90px;
+            height: 120px;
             border-radius: 50%;
         }
-        iframe{
-            width: 80%;
-            border: 0px solid green;
-            order: 2;
+        .navbar{
+            width: 90%;
+            order: -1;
+            background-color: #444543;
+            padding:2px;
         }
+        .right{
+            width: 15%;
+        }
+    
+  }
+
+        
     </style>
 </head>
 <body>
-    <header>
-        <img id="profile" src="\myprofile.jpg" alt="Profile pic">
-        <span><h1>Taskeen Mustafa Nizamani</h1>
-            <h2>The passionate Programmer</h2></span>
-    </header>
+    <div class=".header">
+        
+        <h1>Taskeen Mustafa Nizamani</h1>
+         
+    </div>
     <main>
-        
-        <nav class = "navbar">
-            <img src="home.png" alt="">
-    
 
-        </nav>
-        <iframe src="" frameborder="2"></iframe>
-        
+        <div class="right">
+            <img id="profile" src="myprofile.jpg" alt="Profile pic">
+            <nav class = "navbar">
+                 <img src="home.png" alt="">
+            </nav>
+        </div>
     </main>
     <footer></footer>
 </body>
