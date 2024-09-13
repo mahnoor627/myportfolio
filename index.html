@@ -29,18 +29,36 @@
         
         @media screen and (max-width: 650px) {
         #profile{
-            width: 90px;
-            height: 120px;
-            border-radius: 50%;
+            width: 182px;
+            height: 220px;
+            padding: 10px 10px 5px 10px;
+            background-color: seagreen;
+            margin-bottom: -2px;
+            /* border-radius: 50%; */
         }
         .navbar{
-            width: 90%;
-            order: -1;
-            background-color: #444543;
-            padding:2px;
+            margin-top: 0px;
+            width: 200px;
+            background-color: seagreen;
+            padding:0px 2px 2px 2px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .navbar>*{
+            margin-top:20px ;
         }
         .right{
-            width: 15%;
+            
+            width: 200px;
+        }
+        label{
+            color: rgb(10, 10, 10);
+            font-size: 36px;
+            align-self: center;
+            padding: 4px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
     
   }
@@ -59,7 +77,8 @@
         <div class="right">
             <img id="profile" src="myprofile.jpg" alt="Profile pic">
             <nav class = "navbar">
-                 <img src="home.png" alt="">
+                 <a href="http://"><img id="home-icon" class="nav-icons" src="home.png" alt="home"></a>
+                 <label for="home-icon">Home</label>
             </nav>
         </div>
     </main>
