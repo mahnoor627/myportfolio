@@ -4,84 +4,283 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taskeen Mustafa Nizamani</title>
-    <style >
-        header{
-            display: flex;
-            background-color: black;
-            padding: 4%;
-            border:2px solid red;
-            height: 6%;
-            color: aliceblue;
+    <style>
+        body {
+            background: linear-gradient(135deg, 
+            rgb(8, 128, 150) 0%,  /* Light cyan */
+            rgba(234, 172, 194, 1) 50%, /* Soft pink */
+            rgb(61, 174, 250) 100% /* Light teal */
+            );
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 1000px;
         }
-        header>*{
-            padding: 16px;
-        }
-        main{
-            display: flex;
-            background-color: gray;
-            height: 50%;
-        }
-        
-        footer{
 
+        header {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            padding: 1%;
+            border: 1px solid rgb(153, 109, 109);
+            height: 100px;
+            color: aliceblue;
+            justify-content: center;
+            background: linear-gradient(135deg, 
+            rgb(8, 128, 150) 0%,  /* Light cyan */
+            rgba(234, 172, 194, 1) 50%, /* Soft pink */
+            rgb(61, 174, 250) 100% /* Light teal */
+            );
+        }
+
+        header h1 {
+            font-size: 28px;
+            align-self: center;
+            text-align: center;
+        }
+
+        main {
+            width: 100%;
+        }
+
+        footer {
             background-color: lightgray;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
         }
-        
-        @media screen and (max-width: 650px) {
-        #profile{
-            width: 182px;
-            height: 220px;
-            padding: 10px 10px 5px 10px;
-            background-color: seagreen;
-            margin-bottom: -2px;
-            /* border-radius: 50%; */
+
+        .profiler {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+            height: 80%;
         }
-        .navbar{
+
+        .profiler img {
+            width: 240px;
+            height: 230px;
+            border-radius: 50%;
+        }
+
+        .profiler>h1{
+            text-align: center;
+        }
+
+        #short-intro {
+            margin-top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            max-width: 800px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
             margin-top: 0px;
-            width: 200px;
+            background-color: rgb(137, 156, 145);
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            align-items: center;
+            border: 2px solid green;
+        }
+
+        .navbar a {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 24px; 
+            padding-right: 5px;
+        }
+
+        .navbar a:hover {
             background-color: seagreen;
-            padding:0px 2px 2px 2px;
+            padding-top: 20px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 2px solid cornflowerblue;
+        }
+
+        .navbar a img {
+            width: 40px;
+            height: 45px;
+            margin: 2px;
+        }
+
+        label {
+            color: white;
+            font-size: 24px;
+            margin-left: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .about {
+            padding: 15px;
+            border: 2px solid rgb(225, 245, 233);
+            width: 100%;
+        }
+
+        .detailed-p {
+            font-size: x-large;
+        }
+
+        .about>h1 {
+            background-color: rgb(249, 172, 252);
+        }
+
+        .skills-container {
+            width: 100%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            align-content: center;
+            justify-content: space-around;
         }
-        .navbar>*{
-            margin-top:20px ;
-        }
-        .right{
-            
-            width: 200px;
-        }
-        label{
-            color: rgb(10, 10, 10);
-            font-size: 36px;
-            align-self: center;
-            padding: 4px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-    
-  }
 
-        
+        .skill {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            border: 4px solid rgb(190, 236, 190);
+            margin: 5px;
+            background-color: rgb(166, 233, 211);
+            border-radius: 15px;
+        }
+
+        .skill-icon {
+            margin: 5px;
+            width: 100px;
+           
+        }
+
+        .skill-details {
+            margin: 5px;
+            width: 400px;
+            font-size: larger;
+            font-weight: 100px;
+           
+        }
     </style>
 </head>
 <body>
-    <div class=".header">
-        
-        <h1>Taskeen Mustafa Nizamani</h1>
-         
-    </div>
-    <main>
 
-        <div class="right">
-            <img id="profile" src="myprofile.jpg" alt="Profile pic">
-            <nav class = "navbar">
-                 <a href="http://"><img id="home-icon" class="nav-icons" src="home.png" alt="home"></a>
-                 <label for="home-icon">Home</label>
-            </nav>
+    <header>
+        <h1>Code is the language of innovation. Through it, we transform ideas into reality and create solutions that shape the future.</h1>
+    </header>
+
+    <div id="home" class="profiler">
+        <img id="profile" src="myprofile.png" alt="Profile pic">
+        <h1>Taskeen Mustafa Nizamani</h1>
+        <h2>Programmer - Web Developer - Database Administrator</h2>
+        <p id="short-intro">Welcome to my digital space! I am a passionate programmer, dedicated web engineer, and skilled database administrator. With a focus on crafting efficient web solutions and managing robust data systems, I bring creativity and precision to every project I work on. Explore my portfolio to see how I turn ideas into functional, dynamic experiences.</p>
+    </div>   
+
+    <main>
+        <nav class="navbar">
+            <a href="#home">
+                <img src="home.png" alt="Home">
+                <label for="home-icon">Home</label>
+            </a>
+            <a href="#biodata">
+                <img src="biodata.png" alt="">
+                <label for="biodata">Bio</label>
+            </a> 
+            <a href="#skills">
+                <img src="skills.png" alt="">
+                <label for="Skills">Skills</label>
+            </a>
+            <a href="#projects">
+                <img src="projects.png" alt="">
+                <label for="Projects">Projects</label>
+            </a> 
+            <a href="#certificates">
+                <img src="certifications.png" alt="">
+                <label for="Certifications">Certificates</label>
+            </a>
+        </nav>
+
+        <div class="about" id="biodata">
+            <h1>About Me</h1>
+            <p class="detailed-p">
+                Taskeen Mustafa Nizamani<br>
+                5th-Semester BS Computer Science Student, Sukkur IBA University<br><br>
+                I am a passionate programmer and dedicated web engineer with a strong interest in creating dynamic, efficient web solutions. Currently, I’m focused on learning and mastering cutting-edge technologies like React Native and Java Swing, constantly expanding my skill set to deliver high-quality projects.<br><br>
+                Proud recipient of the Sindh Talent Hunt Program Scholarship (STHP) and supported by The Citizens Foundation's Tertiary Support Program (TSP), I am committed to using my knowledge and skills to solve real-world problems through innovative software solutions. <br><br>
+                Based in Sukkur, Pakistan, I value creativity, precision, and problem-solving in everything I do. With a focus on web development and database management, I strive to create impactful digital experiences that make a difference. <br>
+            </p>
+        </div>
+
+        <div class="about" id="skills">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <div class="skill">
+                    <img class="skill-icon" src=".\skills icons\javaicon.png" alt="java icon">
+                    <p class="skill-details">
+                        Proficient in object-oriented programming and core Java concepts.<br>
+                        Experience with Java Swing for desktop applications.<br>
+                        Knowledge of multithreading and collections framework.
+                    </p>
+                </div>
+                <div class="skill">
+                    <img class="skill-icon" src=".\skills icons\pythonicon.png" alt="python icon">
+                    <p class="skill-details">
+                        Skilled in scripting, data analysis, and automation. <br>
+                        Familiar with libraries like NumPy and Pandas. <br>
+                        Strong understanding of OOP and control structures.
+                    </p>
+                </div>
+                <div class="skill">
+                    <img class="skill-icon" src=".\skills icons\sqlicon.png" alt="SQL icon">
+                    <p class="skill-details">
+                        Proficient in creating and managing relational databases.<br>
+                        Skilled in writing complex queries, joins, and indexing.<br>
+                        Experience in database design and optimization.
+                    </p>
+                </div>
+                <div class="skill">
+                    <img class="skill-icon" src=".\skills icons\htmlicon.png" alt="HTML icon">
+                    <p class="skill-details">
+                        Proficient in creating responsive and dynamic web pages.<br>
+                        Experience with modern CSS (Flexbox, Grid) and JavaScript DOM manipulation.<br>
+                        Ability to integrate APIs for interactive web features.
+                    </p>
+                </div>
+                <div class="skill">
+                    <img class="skill-icon" src=".\skills icons\giticon.png" alt="Git icon">
+                    <p class="skill-details">
+                        Skilled in version control, branching, and merging.<br>
+                        Experienced in managing repositories and collaborating on projects.<br>
+                        Strong understanding of Git workflows and team collaboration.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="about">
+            <h1>Projects</h1>
+            <div class="project"><a href="http://"></a></div>
+            
         </div>
     </main>
-    <footer></footer>
+
+    <footer>
+        &copy; 2024 Taskeen Mustafa Nizamani
+    </footer>
+
 </body>
 </html>
