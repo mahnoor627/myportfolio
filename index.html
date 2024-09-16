@@ -6,15 +6,15 @@
     <title>Taskeen Mustafa Nizamani</title>
     <style>
         *{
-            color: white;
+            color: rgb(0, 0, 0);
         }
         body {
-            /*background: linear-gradient(135deg, 
+            background: linear-gradient(135deg, 
             rgb(8, 128, 150) 0%,  /* Light cyan */
-           /* rgba(234, 172, 194, 1) 50%, /* Soft pink */
-           /* rgb(61, 174, 250) 100% /* Light teal */
-           /* );*/
-           background-color: black;
+            rgba(234, 172, 194, 1) 50%, /* Soft pink */
+            rgb(61, 174, 250) 100% /* Light teal */
+            );
+           background-color: rgb(23, 26, 37);
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -33,7 +33,6 @@
             padding: 1%;
             border: 1px solid rgb(153, 109, 109);
             height: 100px;
-            color: aliceblue;
             width: 100%;
         }
 
@@ -57,7 +56,6 @@
         }
 
         #home{
-            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -74,30 +72,33 @@
         }
 
         .profiler h1 {
-            color: white;
             margin: 10px 0;
+            font-weight:bold;
+            font-size: 40px;
         }
 
         #short-intro {
-            color: rgb(255, 255, 255);
+            color: rgb(106, 116, 106);
             margin-top: 20px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: rgb(245, 242, 242);
             max-width: 800px;
             text-align: center;
             font-size: 30px;
+            font-weight:600;
+        
         }
 
         .navbar {
             position: sticky;
-            top: 0;
-            background-color: rgb(137, 156, 145);
+            top: -5px;
+            background-color: rgb(173, 228, 196);
             padding: 2px;
             display: flex;
             justify-content: space-around;
             width: 100%;
             align-items: center;
-            border: 2px solid green;
+            border: 2px solid seagreen;
+            border-radius: 500px;
         }
 
         .navbar a {
@@ -107,25 +108,24 @@
             align-items: center;
             margin: 10px;
             text-decoration: none;
-            color: black;
             font-size: 24px; 
             padding: 5px;
         }
 
         .navbar a:hover {
-            background-color: seagreen;
+            background-color: rgb(149, 228, 183);
             padding: 20px;
             border: 2px solid cornflowerblue;
         }
 
         .navbar a img {
             width: 40px;
-            height: 45px;
+            height: 35px;
             margin: 2px;
         }
 
         label {
-            color: white;
+            color: rgb(68, 22, 177);
             font-size: 24px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
@@ -133,17 +133,22 @@
         .about {
             padding: 15px;
             /* border: 2px solid rgb(243, 198, 243); */
-            margin-bottom: 20px;
+            margin-bottom: 5px;
         }
 
         .detailed-p {
-            font-size: x-large;
+            font-size: xx-large;
+            font-weight: 800px;
+            color:rgb(6, 49, 11);
+            margin: 10px;
+            padding: 10px;
         }
 
         .about>h1 {
-            background-color: rgb(249, 172, 252);
+            background-color: rgb(255, 130, 252);
             padding: 10px;
             border-radius: 10px;
+            color: rgb(105, 8, 161);
         }
 
         .skills-container {
@@ -157,9 +162,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 4px solid rgb(190, 236, 190);
+            border: 4px solid rgb(203, 233, 203);
             margin: 5px;
-            background-color: rgb(166, 233, 211);
+            background-color: rgb(221, 250, 240);
             border-radius: 15px;
             padding: 10px;
             width: 300px;
@@ -172,7 +177,8 @@
 
         .skill-details {
             font-size: larger;
-            font-weight: 500;
+            font-weight: 1000;
+            color: rgb(114, 114, 231);
         }
 
         #projects-container, #certificates-container {
@@ -197,15 +203,16 @@
         }
 
         .pimage, .cimage {
-            width: 100px;
+            width: 120px;
             height: 120px;
             margin-bottom: 10px;
             border-radius: 10px;
+            border: 1px solid rgb(87, 86, 86);
         }
 
         .project h3, .certificate h3 {
             margin-top: 5px;
-            font-size: 18px;
+            font-size: 24px;
             color: darkblue;
         }
     </style>
